@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1b262c" />
+  
+  <!-- Background Grid Pattern -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0,100 L800,100 M0,200 L800,200 M0,300 L800,300 M0,400 L800,400 M0,500 L800,500" />
+    <path d="M100,0 L100,600 M200,0 L200,600 M300,0 L300,600 M400,0 L400,600 M500,0 L500,600 M600,0 L600,600 M700,0 L700,600" />
+  </g>
+  
+  <!-- Screen with camera feed -->
+  <rect x="150" y="120" width="500" height="300" rx="10" fill="#0f4c75" stroke="#3282b8" stroke-width="4"/>
+  
+  <!-- Camera viewfinder elements -->
+  <g stroke="#bbe1fa" stroke-width="3" fill="none">
+    <path d="M200,170 L200,150 L220,150" /> <!-- Top-left corner -->
+    <path d="M580,170 L580,150 L560,150" /> <!-- Top-right corner -->
+    <path d="M200,370 L200,390 L220,390" /> <!-- Bottom-left corner -->
+    <path d="M580,370 L580,390 L560,390" /> <!-- Bottom-right corner -->
+  </g>
+  
+  <!-- Logo detection boxes -->
+  <g>
+    <!-- Nike Logo -->
+    <g transform="translate(250, 220)">
+      <rect x="-40" y="-25" width="80" height="50" fill="none" stroke="#00a8cc" stroke-width="2" stroke-dasharray="5,3"/>
+      <path d="M-25,-5 C-10,15 10,15 25,-5" stroke="#ffffff" stroke-width="6" fill="none"/>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#00a8cc">NIKE</text>
+      <text x="0" y="-35" font-family="monospace" font-size="10" text-anchor="middle" fill="#00a8cc">99.8%</text>
+    </g>
+    
+    <!-- Apple Logo -->
+    <g transform="translate(400, 250)">
+      <rect x="-30" y="-35" width="60" height="70" fill="none" stroke="#ff5200" stroke-width="2" stroke-dasharray="5,3"/>
+      <circle cx="0" cy="-15" r="20" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <path d="M0,5 C-10,5 -20,30 0,30 C20,30 10,5 0,5" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <path d="M0,-35 L0,-25" stroke="#ffffff" stroke-width="4"/>
+      <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#ff5200">APPLE</text>
+      <text x="0" y="-45" font-family="monospace" font-size="10" text-anchor="middle" fill="#ff5200">97.5%</text>
+    </g>
+    
+    <!-- Google Logo -->
+    <g transform="translate(530, 230)">
+      <rect x="-45" y="-25" width="90" height="50" fill="none" stroke="#4ee44e" stroke-width="2" stroke-dasharray="5,3"/>
+      <circle cx="-15" cy="0" r="15" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <path d="M0,-15 L30,-15 L15,15 L-15,15" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#4ee44e">GOOGLE</text>
+      <text x="0" y="-35" font-family="monospace" font-size="10" text-anchor="middle" fill="#4ee44e">98.2%</text>
+    </g>
+  </g>
+  
+  <!-- AI Processing Elements -->
+  <g transform="translate(400, 480)">
+    <rect x="-150" y="-30" width="300" height="60" rx="10" fill="#0f4c75" stroke="#3282b8" stroke-width="3"/>
+    
+    <!-- Processing Indicators -->
+    <g>
+      <circle cx="-100" cy="0" r="15" fill="#bbe1fa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="-50" cy="0" r="15" fill="#bbe1fa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="0" cy="0" r="15" fill="#bbe1fa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.6s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="50" cy="0" r="15" fill="#bbe1fa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.9s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="100" cy="0" r="15" fill="#bbe1fa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1.2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Title Text -->
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Brand Monitoring System
+  </text>
+</svg> 

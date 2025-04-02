@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#1a1a2e" />
+  
+  <!-- Background Grid Pattern -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0,100 L800,100 M0,200 L800,200 M0,300 L800,300 M0,400 L800,400 M0,500 L800,500" />
+    <path d="M100,0 L100,600 M200,0 L200,600 M300,0 L300,600 M400,0 L400,600 M500,0 L500,600 M600,0 L600,600 M700,0 L700,600" />
+  </g>
+  
+  <!-- AI Brain Icon -->
+  <g transform="translate(400, 230)">
+    <circle cx="0" cy="0" r="120" fill="#16213e" stroke="#0f3460" stroke-width="5" />
+    <path d="M-60,-20 L60,-20 M-40,0 L40,0 M-60,20 L60,20" stroke="#4cc9f0" stroke-width="8" stroke-linecap="round" />
+    <path d="M-30,-60 L-30,-20 M0,-60 L0,-20 M30,-60 L30,-20" stroke="#4cc9f0" stroke-width="8" stroke-linecap="round" />
+    <path d="M-30,60 L-30,20 M0,60 L0,20 M30,60 L30,20" stroke="#4cc9f0" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Interview Elements -->
+  <g transform="translate(200, 400)">
+    <circle cx="0" cy="0" r="50" fill="#16213e" stroke="#4cc9f0" stroke-width="3" />
+    <path d="M-20,-10 A20,20 0 0,1 20,-10" stroke="#e94560" stroke-width="4" fill="none" />
+    <circle cx="-15" cy="-20" r="5" fill="#e94560" />
+    <circle cx="15" cy="-20" r="5" fill="#e94560" />
+  </g>
+  
+  <g transform="translate(600, 400)">
+    <rect x="-40" y="-40" width="80" height="80" rx="10" fill="#16213e" stroke="#4cc9f0" stroke-width="3" />
+    <line x1="-20" y1="-20" x2="20" y2="-20" stroke="#e94560" stroke-width="4" stroke-linecap="round" />
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#e94560" stroke-width="4" stroke-linecap="round" />
+    <line x1="-20" y1="20" x2="20" y2="20" stroke="#e94560" stroke-width="4" stroke-linecap="round" />
+  </g>
+  
+  <!-- Connection Lines -->
+  <g fill="none" stroke="#4cc9f0" stroke-width="3" stroke-dasharray="10,5">
+    <path d="M250,350 C300,250 350,230 400,230" />
+    <path d="M550,350 C500,250 450,230 400,230" />
+  </g>
+  
+  <!-- Title Text -->
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    AI Mock Interview Pro
+  </text>
+</svg> 

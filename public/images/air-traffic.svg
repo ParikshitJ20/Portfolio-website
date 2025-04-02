@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#0a192f" />
+  
+  <!-- Background Grid Pattern -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0,100 L800,100 M0,200 L800,200 M0,300 L800,300 M0,400 L800,400 M0,500 L800,500" />
+    <path d="M100,0 L100,600 M200,0 L200,600 M300,0 L300,600 M400,0 L400,600 M500,0 L500,600 M600,0 L600,600 M700,0 L700,600" />
+  </g>
+  
+  <!-- Radar Screen -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="200" fill="#112240" stroke="#64ffda" stroke-width="2" />
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#64ffda" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#64ffda" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#64ffda" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Radar Axes -->
+    <line x1="-200" y1="0" x2="200" y2="0" stroke="#64ffda" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="0" y1="-200" x2="0" y2="200" stroke="#64ffda" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Radar Sweep -->
+    <g>
+      <line x1="0" y1="0" x2="0" y2="-200" stroke="#64ffda" stroke-width="2" stroke-opacity="0.7">
+        <animateTransform 
+          attributeName="transform" 
+          attributeType="XML" 
+          type="rotate" 
+          from="0" 
+          to="360" 
+          dur="4s" 
+          repeatCount="indefinite" />
+      </line>
+      <path d="M0,0 L-40,-180 A200,200 0 0,1 40,-180 Z" fill="#64ffda" fill-opacity="0.2">
+        <animateTransform 
+          attributeName="transform" 
+          attributeType="XML" 
+          type="rotate" 
+          from="0" 
+          to="360" 
+          dur="4s" 
+          repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+  
+  <!-- Airplanes -->
+  <g>
+    <!-- Airplane 1 -->
+    <g transform="translate(500, 200)">
+      <circle cx="0" cy="0" r="5" fill="#ff6b6b" />
+      <path d="M0,0 L15,15" stroke="#ff6b6b" stroke-width="1.5" />
+      <text x="20" y="20" font-family="monospace" font-size="12" fill="#ff6b6b">FLIGHT-1</text>
+      <text x="20" y="35" font-family="monospace" font-size="10" fill="#ff6b6b">ALT:30000</text>
+      
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ff6b6b" stroke-width="1" stroke-opacity="0.3">
+        <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Airplane 2 -->
+    <g transform="translate(300, 350)">
+      <circle cx="0" cy="0" r="5" fill="#4ecdc4" />
+      <path d="M0,0 L15,15" stroke="#4ecdc4" stroke-width="1.5" />
+      <text x="20" y="20" font-family="monospace" font-size="12" fill="#4ecdc4">FLIGHT-2</text>
+      <text x="20" y="35" font-family="monospace" font-size="10" fill="#4ecdc4">ALT:25000</text>
+      
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#4ecdc4" stroke-width="1" stroke-opacity="0.3">
+        <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite" begin="0.7s" />
+        <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="0.7s" />
+      </circle>
+    </g>
+    
+    <!-- Airplane 3 -->
+    <g transform="translate(450, 400)">
+      <circle cx="0" cy="0" r="5" fill="#ffd166" />
+      <path d="M0,0 L15,15" stroke="#ffd166" stroke-width="1.5" />
+      <text x="20" y="20" font-family="monospace" font-size="12" fill="#ffd166">FLIGHT-3</text>
+      <text x="20" y="35" font-family="monospace" font-size="10" fill="#ffd166">ALT:28000</text>
+      
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#ffd166" stroke-width="1" stroke-opacity="0.3">
+        <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite" begin="1.4s" />
+        <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" begin="1.4s" />
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Runway -->
+  <g transform="translate(400, 300)">
+    <rect x="-120" y="-15" width="240" height="30" fill="#233554" stroke="#64ffda" stroke-width="2" />
+    <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-dasharray="10,15">
+      <line x1="-100" y1="0" x2="100" y2="0" />
+    </g>
+    
+    <!-- Runway Lights -->
+    <g fill="#f9f871">
+      <circle cx="-110" cy="-10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0s" />
+      </circle>
+      <circle cx="-70" cy="-10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.2s" />
+      </circle>
+      <circle cx="-30" cy="-10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.4s" />
+      </circle>
+      <circle cx="10" cy="-10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.6s" />
+      </circle>
+      <circle cx="50" cy="-10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.8s" />
+      </circle>
+      <circle cx="90" cy="-10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="1s" />
+      </circle>
+      
+      <circle cx="-110" cy="10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0s" />
+      </circle>
+      <circle cx="-70" cy="10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.2s" />
+      </circle>
+      <circle cx="-30" cy="10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.4s" />
+      </circle>
+      <circle cx="10" cy="10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.6s" />
+      </circle>
+      <circle cx="50" cy="10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.8s" />
+      </circle>
+      <circle cx="90" cy="10" r="3">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="1s" />
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Control Tower -->
+  <g transform="translate(650, 170)">
+    <rect x="-30" y="20" width="60" height="60" fill="#233554" stroke="#64ffda" stroke-width="2" />
+    <polygon points="-35,20 35,20 25,-20 -25,-20" fill="#233554" stroke="#64ffda" stroke-width="2" />
+    <circle cx="0" cy="-10" r="15" fill="#112240" stroke="#64ffda" stroke-width="2" />
+    <rect x="-20" y="80" width="40" height="50" fill="#233554" stroke="#64ffda" stroke-width="2" />
+  </g>
+  
+  <!-- Thread Visualization -->
+  <g transform="translate(130, 400)">
+    <rect x="-80" y="-60" width="160" height="120" rx="10" fill="#112240" stroke="#64ffda" stroke-width="2" />
+    <text x="0" y="-30" font-family="monospace" font-size="14" text-anchor="middle" fill="#ffffff">THREADS</text>
+    
+    <g fill="#64ffda">
+      <rect x="-60" y="-10" width="35" height="10" rx="2" />
+      <rect x="-60" y="10" width="50" height="10" rx="2" />
+      <rect x="-60" y="30" width="40" height="10" rx="2" />
+      <rect x="0" y="-10" width="45" height="10" rx="2" />
+      <rect x="0" y="10" width="30" height="10" rx="2" />
+      <rect x="0" y="30" width="50" height="10" rx="2" />
+    </g>
+  </g>
+  
+  <!-- Title Text -->
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Air Traffic Control Simulation
+  </text>
+</svg> 
